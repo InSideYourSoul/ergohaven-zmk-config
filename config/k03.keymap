@@ -26,7 +26,7 @@
                    &kp LGUI  &kp LALT  &kp LCTRL  &mo 1   &kp SPACE           &kp BACKSPACE  &mo 2   &kp ENTER  &kp RALT   &kp RGUI
             >;
 
-            display-name = "Base";
+            display-name = "Artem";
             sensor-bindings =
                 <&inc_dec_kp C_PREV C_NEXT>,
                 <&enc_vol>,
