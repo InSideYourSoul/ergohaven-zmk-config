@@ -28,7 +28,7 @@
 
             display-name = "Base";
             sensor-bindings =
-                <&inc_dec_kp C_PREV K_PREV>,
+                <&inc_dec_kp C_PREV C_NEXT>,
                 <&enc_vol>,
                 <&inc_dec_kp A B>,
                 <&inc_dec_kp C D>,
