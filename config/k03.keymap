@@ -33,7 +33,6 @@
                 <&enc_vol>,
                 <&inc_dec_kp 0 0>,
                 <&inc_dec_kp 0 0>,
-                <&inc_dec_kp 0 0>,
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
