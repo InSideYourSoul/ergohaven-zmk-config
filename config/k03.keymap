@@ -34,7 +34,7 @@
             >;
 
             display-name = "Artem";
-            sensor-bindings = <&Scroll>, <&enc_vol>;
+            sensor-bindings = <&encoder_scroll>, <&enc_vol>;
         };
 
         nav {
