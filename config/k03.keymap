@@ -14,12 +14,13 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
 
-        Scroll: Scroll {
+        encoder_scroll: encoder_scroll {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "SCROLL";
             #sensor-binding-cells = <0>;
-            bindings = <&mkp K_SCROLL_UP>, <&mkp K_SCROLL_DOWN>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>; // Adjust speed as needed
         };
+    };
 
     };
 
