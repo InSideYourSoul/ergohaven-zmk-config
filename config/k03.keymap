@@ -13,6 +13,13 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
+
+        Scroll: Scroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp K_SCROLL_UP>, <&kp K_SCROLL_DOWN>;
+        };
     };
 
     keymap {
@@ -28,9 +35,7 @@
             >;
 
             display-name = "Artem";
-            sensor-bindings =
-                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>,
-                <&enc_vol>;
+            sensor-bindings = <&Scroll>, <&enc_vol>;
         };
 
         nav {
