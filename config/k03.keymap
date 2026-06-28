@@ -21,9 +21,6 @@
             tap-ms = <20>; // Adjust speed as needed
         };
     };
-
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
