@@ -14,14 +14,14 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
 
-        endcoder_scroll: endcoder_scroll {
+        scroll: scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc MOVE_Y(10)>;
 
             // Adjust speed as needed
 
-            label = "ENDCODER_SCROLL";
+            label = "SCROLL";
         };
     };
 
@@ -38,7 +38,7 @@
             >;
 
             display-name = "Artem";
-            sensor-bindings = <&endcoder_scroll>, <&enc_vol>;
+            sensor-bindings = <&scroll>, <&enc_vol>;
         };
 
         nav {
