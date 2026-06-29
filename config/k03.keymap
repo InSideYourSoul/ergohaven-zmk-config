@@ -14,13 +14,16 @@
             bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;
         };
 
-        encoder_scroll: encoder_scroll {
+        endcoder_scroll: endcoder_scroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-            tap-ms = <20>; // Adjust speed as needed
+
+            tap-ms = <24>; // Adjust speed as needed
+            label = "ENDCODER_SCROLL";
         };
     };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -34,7 +37,7 @@
             >;
 
             display-name = "Artem";
-            sensor-bindings = <&encoder_scroll>, <&enc_vol>;
+            sensor-bindings = <&endcoder_scroll>, <&enc_vol>;
         };
 
         nav {
