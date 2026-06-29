@@ -28,13 +28,7 @@
             >;
 
             display-name = "Artem";
-            sensor-bindings =
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
-                <&enc_vol>,
-                <&inc_dec_kp C C>,
-                <&inc_dec_kp D D>,
-                <&inc_dec_kp E E>,
-                <&inc_dec_kp F F>;
+            sensor-bindings = <&inc_dec_kp A B>, <&enc_vol>;
         };
 
         nav {
