@@ -6,6 +6,10 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+&msc {
+    time-to-max-speed-ms = <300>;
+    acceleration-exponent = <0>;
+};
     behaviors {
         enc_vol: enc_vol {
             compatible = "zmk,behavior-sensor-rotate";
